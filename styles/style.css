@@ -111,20 +111,33 @@ main {
   border-radius: 5px;
   border: none;
 }
+.quote img{
+    position: absolute;
+}
 .quote {
-  background-color: #c6e4d6;
   border-radius: 10px;
+  border: 1px solid #ccc;
   padding: 20px;
   margin: 30px 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
 }
-main > table {
+.table{
+  background-color: white; 
+  padding: 20px; 
+  border-radius: 8px; 
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+main table {
+    padding: 20px;
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
 }
 
 th {
-  background-color: #d1f0d1;
+  background-color: #C6E4D6;
   color: #333;
   font-weight: bold;
 }
@@ -141,7 +154,7 @@ td {
 select {
   padding: 5px;
   font-size: 14px;
-  background-color: #e6f7e6;
+  background-color: #C6E4D6;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
@@ -153,6 +166,9 @@ select {
   border-radius: 10px;
   margin-top: 20px;
 }
+.news-reverse {
+  flex-direction: row-reverse;
+}
 .news > div {
   padding: 20px;
 }
@@ -163,10 +179,27 @@ select {
 }
 .amount-options {
   display: flex;
-  justify-content: space-around;
+  justify-content:space-evenly;
   align-items: center;
-}
+  margin-top: 20px;
 
+}
+.amount-option {
+    padding: 15px 15px;
+    color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    
+}
+.amount-option.selected {
+    background-color: #C6E4D6;
+}
+.amount-option:hover {
+    background-color: #C6E4D6;
+}
 .other-amount {
   display: flex;
   justify-content: center;
@@ -174,9 +207,12 @@ select {
 }
 
 .other-amount input {
-  width: 100%;
-  max-width: 300px;
+  width: 800px;
+  height: 30px;
+  padding: 5px;
   text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 
 .button {
@@ -192,4 +228,14 @@ select {
 
 .button:hover {
   background-color: #004d00;
+}
+.button-2{
+    display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #006a40;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
