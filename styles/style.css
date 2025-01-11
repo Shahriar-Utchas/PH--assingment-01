@@ -94,6 +94,7 @@ main {
   height: 40px;
   border-radius: 5px;
   border: none;
+  cursor: pointer;
 }
 .v-2 button {
   background-color: #006a50;
@@ -102,6 +103,7 @@ main {
   height: 40px;
   border-radius: 5px;
   border: none;
+  cursor: pointer;
 }
 .v-3 button {
   background-color: #d98f2d;
@@ -110,6 +112,7 @@ main {
   height: 40px;
   border-radius: 5px;
   border: none;
+  cursor: pointer;
 }
 .quote img {
   position: absolute;
